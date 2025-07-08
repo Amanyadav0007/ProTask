@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTask | To-Do Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ProTask - To-Do Manager</h1>
+    </header>
+
+    <main class="category-container">
+        <div class="category-box" onclick="openCategory('Personal')">
+            <div class="icon">👤</div>
+            <h2>Personal</h2>
+            <p>Tasks: <span id="count-Personal">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Private')">
+            <div class="icon">🔒</div>
+            <h2>Private</h2>
+            <p>Tasks: <span id="count-Private">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Meetings')">
+            <div class="icon">👔</div>
+            <h2>Meetings</h2>
+            <p>Tasks: <span id="count-Meetings">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Study')">
+            <div class="icon">📚</div>
+            <h2>Study</h2>
+            <p>Tasks: <span id="count-Study">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Event')">
+            <div class="icon">🌆</div>
+            <h2>Event</h2>
+            <p>Tasks: <span id="count-Event">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Health')">
+            <div class="icon">💓</div>
+            <h2>Health</h2>
+            <p>Tasks: <span id="count-Health">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Finance')">
+            <div class="icon">💰</div>
+            <h2>Finance</h2>
+            <p>Tasks: <span id="count-Finance">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Travel')">
+            <div class="icon">✈️</div>
+            <h2>Travel</h2>
+            <p>Tasks: <span id="count-Travel">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Shopping')">
+            <div class="icon">🛍️</div>
+            <h2>Shopping</h2>
+            <p>Tasks: <span id="count-Shopping">0</span></p>
+        </div>
+        <div class="category-box" onclick="openCategory('Snack')">
+            <div class="icon">🍕</div>
+            <h2>Snack Plan</h2>
+            <p>Tasks: <span id="count-Snack">0</span></p>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <p>Made By 💕 : Aman Yadav</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

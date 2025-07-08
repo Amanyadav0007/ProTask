@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body>
+    <header class="category-header">
+        <button onclick="goBack()">🔙 Back</button>
+        <h1 id="category-title">Category</h1>
+    </header>
+
+    <main class="task-area">
+        <div class="task-controls">
+            <button onclick="openTaskModal()">+ Add Task</button>
+        </div>
+
+        <ul id="task-list" class="task-list">
+            <!-- Tasks will be inserted here dynamically -->
+        </ul>
+    </main>
+
+    <!-- Modal for adding task -->
+    <div class="modal" id="task-modal">
+        <div class="modal-content">
+            <h2>Add New Task</h2>
+            <input type="text" id="task-input" placeholder="Enter task title..." required />
+            <select id="task-tag">
+                <option value="regular">Regular</option>
+                <option value="important">Important</option>
+                <option value="very-important">Very Important</option>
+            </select>
+            <div class="modal-buttons">
+                <button onclick="addTask()">Add</button>
+                <button onclick="closeTaskModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/category.js"></script>
+</body>
+
+</html>
