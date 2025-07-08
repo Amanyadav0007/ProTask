@@ -1,3 +1,8 @@
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+  alert("Oye hoye! Right-click allowed nahi hai boss 😎");
+});
+
 function openCategory(category) {
     window.location.href = `category.html?cat=${encodeURIComponent(category)}`;
 }
@@ -14,10 +19,5 @@ function updateTaskCounts() {
         }
     });
 }
-
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-  alert("Oye hoye! Right-click allowed nahi hai boss 😎");
-});
 
 updateTaskCounts(); // Run it on page load
