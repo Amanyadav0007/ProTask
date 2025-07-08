@@ -15,4 +15,9 @@ function updateTaskCounts() {
     });
 }
 
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+  alert("Oye hoye! Right-click allowed nahi hai boss 😎");
+});
+
 updateTaskCounts(); // Run it on page load
